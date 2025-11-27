@@ -1,0 +1,72 @@
+/* Minimal styles inspired by the screenshot; not identical */
+:root{--bg:#f4f6f8;--panel:#ffffff;--muted:#6b7280;--primary:#0b5fff;--danger:#e11d48}
+html,body{height:100%;margin:0;font-family:Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#111}
+.container{display:flex;gap:18px;padding:18px;height:100vh;box-sizing:border-box}
+.left-panel{width:420px;background:var(--panel);border-radius:8px;padding:12px;display:flex;flex-direction:column}
+.instructions-header{font-weight:600;margin-bottom:8px}
+.instructions{flex:0 0 55%;resize:none;padding:8px;border:1px solid #e5e7eb;border-radius:6px}
+.controls{display:flex;gap:8px;margin-top:10px}
+.btn{padding:8px 12px;border-radius:6px;border:1px solid #d1d5db;background:#fff;cursor:pointer}
+.btn.primary{background:var(--primary);color:#fff;border-color:transparent}
+.btn.danger{background:var(--danger);color:#fff;border-color:transparent}
+.task-insights{margin-top:14px;flex:1;overflow:auto}
+.task-insights h4{margin:0 0 8px 0}
+.terminal-output {
+    margin-top: 14px;
+    background: #1e1e1e;
+    border-radius: 6px;
+    padding: 8px;
+}
+.terminal-output h4 {
+    color: #fff;
+    margin-bottom: 8px;
+}
+.terminal-output pre {
+    margin: 0;
+    color: #fff;
+    font-family: 'Consolas', monospace;
+    white-space: pre-wrap;
+    font-size: 12px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.right-panel{flex:1;display:flex;flex-direction:column;gap:12px}
+.preview-header{font-weight:600}
+.preview{background:var(--panel);border-radius:8px;padding:12px;height:60%;display:flex;align-items:center;justify-content:center;border:1px solid #e5e7eb;overflow:auto}
+.preview img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.screenshot-placeholder{color:var(--muted)}
+.prompt-area {
+    background: var(--panel);
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+}
+.prompt-area h4 {
+    margin: 0 0 8px 0;
+    color: var(--primary);
+}
+.response-instructions {
+    color: var(--primary);
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding: 4px 8px;
+    background: #e6f0ff;
+    border-radius: 4px;
+}
+
+.prompt-area textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid var(--primary);
+    resize: none;
+    font-size: 14px;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(11, 95, 255, 0.1);
+}
+@media(max-width:900px){.container{flex-direction:column}.left-panel{width:auto;height:40vh}.preview{height:40vh}}

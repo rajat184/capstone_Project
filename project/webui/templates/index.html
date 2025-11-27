@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CUA Task UI</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="left-panel">
+      <div class="instructions-header">Instructions</div>
+      <textarea id="instructions" class="instructions" placeholder="Enter step-by-step instructions here..."></textarea>
+      <div class="controls">
+        <button id="send" class="btn primary">Send</button>
+        <button id="cancel" class="btn danger">Cancel</button>
+        <button id="reset" class="btn">Reset</button>
+      </div>
+      <div class="task-insights">
+        <h4>Task Progress</h4>
+        <div id="insights">No insights yet.</div>
+        <div class="terminal-output">
+          <h4>Terminal Output</h4>
+          <pre id="terminal">No output yet.</pre>
+        </div>
+      </div>
+    </aside>
+
+    <main class="right-panel">
+      <div class="preview-header">Preview</div>
+      <div id="preview" class="preview">
+        <div class="screenshot-placeholder">Screenshot preview will appear here</div>
+      </div>
+
+      <div class="prompt-area">
+        <h4>Your Response</h4>
+        <div class="response-instructions">Type your response below and click the blue Send button, or press Enter to submit</div>
+        <textarea id="prompt" placeholder="Type your response here (e.g., 'yes' or 'no') and click Send..."></textarea>
+      </div>
+    </main>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
