@@ -3,8 +3,8 @@
 
 -Team Members : Rajat Jaiswal (52346854) , Shivanshu Kumar  (52346821) , Aryan Singla (52346825)
 
--
-Mentor : M Hari (51637334) 
+
+-Mentor : M Hari (51637334) 
 ## 🎯 Overview
 
 This is an **AI-powered Computer Use Automation (CUA)** system that executes automated test cases on web applications using OpenAI's computer use API and Playwright browser automation. The system provides a web interface for submitting test instructions, monitors execution in real-time, and generates professional HTML reports.
@@ -296,6 +296,7 @@ python webui/generate_last_session_report.py
 ![HTML Report](html_report.png)
 
 ---
+
 
 
 
