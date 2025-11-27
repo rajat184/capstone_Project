@@ -1,9 +1,9 @@
 # CUA Test Automation - Code Flow Documentation
 
 
-Team Members : Rajat Jaiswal (52346854) , Shivanshu Kumar  (52346821) , Aryan Singla (52346825)
+-Team Members : Rajat Jaiswal (52346854) , Shivanshu Kumar  (52346821) , Aryan Singla (52346825)
 
---
+-
 Mentor : M Hari (51637334) 
 ## 🎯 Overview
 
@@ -296,6 +296,7 @@ python webui/generate_last_session_report.py
 ![HTML Report](html_report.png)
 
 ---
+
 
 
 
